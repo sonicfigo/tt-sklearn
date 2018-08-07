@@ -1,0 +1,92 @@
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+#spider msg id log
+yee.conf
+yee.conf.backup
+
+#temp_data
+yee_station/yee_var/temp_data
+yee_station/yee_var/tasks
+yee_station/yee_var/tasks_crawling
+yee_station/yee_var/tasks_crawled
+yee_station/yee_var/tasks_expired
+yee_station/yee_var/items_backup
+
+yee_station/yee_var/temp_html
+yee_station/yee_var/msk_captcha/
+
+#pycharm_ide
+.idea/
+
+#log
+yee.log*
+sys*.log.*
+
+#temp pdf
+*.pdf
+
+# vim swap file
+*.swp
+
+/sd.sh
+
+# test
+/tests/msk_img
+
+# NA
+/dump.rdb
+/.editorconfig

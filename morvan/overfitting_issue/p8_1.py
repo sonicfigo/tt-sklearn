@@ -1,18 +1,16 @@
 # coding=utf-8
 """
-sklearn 中的 cross validation 交叉验证
-
-对于我们选择正确的 model 和model 的参数是非常有帮助的.
-有了他的帮助, 我们能直观的看出不同 model 或者参数对结构准确度的影响.
-
 cross validation 交叉验证1
+
+交叉验证，对于我们选择正确的 model 和model 的参数是非常有帮助的.
+有了他的帮助, 我们能直观的看出不同 model 或者参数对结构准确度的影响.
 
 ---------------------------8.1 传统的单一split法(未cross的)
 场景：
-    单一的train_test_split的数据分法，可能造成偏差，因为学习和考试的数据是固定独立分开的。
+    单一的 train_test_split 的数据分法，可能造成偏差，因为学习和考试的数据是固定独立分开的。
 
 方案：
-    对training data 和 test data 的多种分法，得到每组分法的考试分数
+    对 training data 和 test data 的多种分法，得到每组分法的考试分数
     综合每组分数，得到最终分数，更为完整，不会偏差太多。
 """
 

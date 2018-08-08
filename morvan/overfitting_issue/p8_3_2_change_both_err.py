@@ -51,7 +51,9 @@ def accuracy4classification():
     kcv_score_nda = np.array(kcv_score_list)  # (25,0)
     print('kcv_score_nda')
     print(kcv_score_nda)
-    nd_kcv_scores55 = kcv_score_nda.reshape(k_range.shape)  # FIXME 注意这句, 目前还不符合需求，错误的
+
+    # FIXME 注意这句, 错误的，shape后的score并不能正确对应原 x，y的组合
+    nd_kcv_scores55 = kcv_score_nda.reshape(k_range.shape)
 
     print('\n===================scores')
     print(nd_kcv_scores55)

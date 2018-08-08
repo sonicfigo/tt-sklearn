@@ -2,6 +2,8 @@
 """
 模仿p8_3的思路，研究，固定k值的情况下，变动 cv 分组数，到底哪个cv值最好
 
+前提： k = 5
+
 结论是大概 17， 18 组时，分数最高
 """
 from __future__ import print_function

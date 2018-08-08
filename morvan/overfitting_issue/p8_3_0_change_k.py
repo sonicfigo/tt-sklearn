@@ -2,10 +2,11 @@
 """
 cross validation 交叉验证1
 
---------------8.3 n_neighbors = k 就是最好的参数？
-不一定，那么测试一下。
+--------------8.3 n_neighbors = k 就是最好的参数？ 不一定，那么测试一下。
 
 除了换 k， 甚至model也可以换一下。 本例子没有做换model，只是换了scoring
+
+前提： cv = 10
 """
 from __future__ import print_function
 from sklearn.datasets import load_iris
@@ -33,7 +34,7 @@ def accuracy4classification():
         scores = cross_val_score(knn, X, y, cv=10, scoring='accuracy')
         scores_mean = scores.mean()
         k_scores.append(scores_mean)
-        print('\n===================scores_mean:%s' % scores_mean)
+        # print('\n===================scores_mean:%s' % scores_mean)
         plt.text(k, scores_mean, k, ha='center', va='bottom')  # 把 k 值标注上
 
     plt.plot(k_range, k_scores)
@@ -65,4 +66,4 @@ def loss4regression():
 
 
 accuracy4classification()  # accuracy越高越好
-loss4regression()  # loss越低越好
+# loss4regression()  # loss越低越好

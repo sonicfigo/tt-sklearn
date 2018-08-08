@@ -2,7 +2,8 @@
 """
 cross validation 交叉验证1
 
-------------8.2 cross 方法， 综合了五个分组，比较没有偏差
+------------8.2 cross_val_score 方法， 综合了五个分组，比较没有偏差
+
 前提： n_neighbors = 5
 """
 from sklearn.datasets import load_iris

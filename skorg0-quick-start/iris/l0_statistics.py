@@ -1,6 +1,6 @@
 # coding=utf-8
 """
- scikit-learn本身内置了一些标准的数据集，例如：
+scikit-learn本身内置了一些标准的数据集，例如：
 鸢尾花和数字数据集用于分类，还有波士顿房屋价格数据集用来做回归。
 接下来用Python 语言来实现加载这些数据集（iris和digits）
 
@@ -26,7 +26,7 @@ petal width。
 # 150条记录
 print('\niris.data:\n%s' % iris.data)  # 显示iris数据
 assert len(iris.data) == len(iris.target) == 150
-assert len(iris.data[0]) == 4  # 每一行数据，有4个feature
+assert 4 == len(iris.data[0])  # 每一行数据，有4个feature
 
 # 如果是对于监督学习，比如分类问题，数据中会包含对应的分类结果，其存在.target成员中：
 print('\niris.target(数字答案):\n%s' % iris.target)

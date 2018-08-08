@@ -10,7 +10,7 @@ iris = datasets.load_iris()
 
 clf = SVC()
 clf.fit(iris.data, iris.target)  # 学习的是数字
-print(list(clf.predict(iris.data[:3])))  # 输出数字 [0, 0, 0]
+print(clf.predict(iris.data[:3]))  # 输出数字 [0, 0, 0]
 
 clf.fit(iris.data, iris.target_names[iris.target])  # 学习的是名字
-print(list(clf.predict(iris.data[:3])))  # 输出名字 ['setosa', 'setosa', 'setosa']
+print(clf.predict(iris.data[:3]))  # 输出名字 ['setosa', 'setosa', 'setosa']

@@ -20,7 +20,9 @@ print('\ndigits.data - %s个输入数据, shape-%s。' % (len(digits.data), digi
 print(digits.data)
 print(type(digits.data))  # type:numpy.ndarray
 
+print('\ndigits.data[0] & images[0]，data 就是 image 的 8*8 数据打平成 64')
 print(digits.data[0])
+print(digits.images[0])
 
 print('\ndigits.target - %s 个target(文字答案)。' % len(digits.target))
 print(digits.target)

@@ -1,7 +1,7 @@
 # coding=utf-8
 """
 fit 与 output的关系。
-（不太明白用途在哪里，放过。2016-12-24 14:24:03）
+与 quick-start有些重复，就是二值化
 """
 
 from sklearn.svm import SVC

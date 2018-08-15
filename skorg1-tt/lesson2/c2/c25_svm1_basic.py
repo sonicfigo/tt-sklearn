@@ -1,6 +1,8 @@
 # coding=utf-8
 """
-
+svc的关键参数：
+- C：惩罚系数，详情看笔记
+- gamma
 """
 
 from sklearn import svm, datasets
@@ -9,8 +11,9 @@ from sklearn.model_selection import train_test_split
 iris = datasets.load_iris()
 
 """
-kernel='linear', Linear kernel，线性分界。
-还可以用
+kernel
+
+='linear', Linear kernel，线性分界。
 ='poly'，Polynomial kernel, 多边形分界。
 ='rbf', Radial Basis Function
 """

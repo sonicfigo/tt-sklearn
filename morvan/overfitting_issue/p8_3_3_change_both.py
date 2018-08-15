@@ -1,6 +1,6 @@
 # coding=utf-8
 """
-p8_3_extend2_reshape.py 错误版本的正确方案实现
+之前有个错误版本，本例子为正确方案实现
 
 用 panda 的dataframe 处理， 才能实现目标：k值 和 cv值的混搭得分效果，用3d图形显示
 要点，注意以下 3 个数据的 shape ，值，是否正确对应了

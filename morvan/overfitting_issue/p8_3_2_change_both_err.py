@@ -4,7 +4,6 @@
 
 注意：本例子是一个错误示范，盲目的认为 reshape 后的数据，就会正确对应 k_range 和 cv_range的组合
 
-正确的方案看 p8_3_extend2_pd.py
 """
 from __future__ import print_function
 
@@ -64,6 +63,7 @@ def accuracy4classification():
                       cmap=plt.get_cmap('rainbow')
                       )
 
+    # 填充等高色，无效果
     # ax3d.contourf(k_range, cv_range, nd_kcv_scores55, zdir='z', offset=-0.5,
     #               cmap=plt.get_cmap('rainbow'))
 

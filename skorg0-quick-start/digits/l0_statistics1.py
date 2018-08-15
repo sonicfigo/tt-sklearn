@@ -48,3 +48,4 @@ print(len(img_test))
 
 print('\n===================X 的一条数据例子，注意shape 是 (64, )，而不是图片的shape(8, 8)')
 print(X_train[0])
+print(digits.data[1].ravel())

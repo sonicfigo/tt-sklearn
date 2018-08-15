@@ -41,3 +41,5 @@ print(iris_names)
 
 print(type(iris_names))  # <type 'numpy.ndarray'>
 print(iris_names.shape)  # (150,)
+
+

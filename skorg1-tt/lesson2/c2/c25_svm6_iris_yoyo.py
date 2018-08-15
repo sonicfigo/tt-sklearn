@@ -2,14 +2,11 @@
 """
 根据 头2个feature， 区分 iris数据中的 1类 和 2类
 
-4个feature，预测3种类别，分数更高，学得更好。
 2个feature，预测2种类别，分数不高，不稳定。
-
+4个feature，预测3种类别，分数更高，学得更好。
 
 """
 
-# import numpy as np
-# import matplotlib.pyplot as plt
 from sklearn import datasets, svm
 from sklearn.model_selection import train_test_split
 
@@ -19,7 +16,7 @@ def predict_2_by_feature_2():
     X = iris.data
     y = iris.target
 
-    X = X[y != 0, :2]  # 只要 y = 1/2 的对应的X， 且X只要前两个feature
+    X = X[y != 0, :2]  # 只要 y = 1 or 2 的对应的X， 且X只要前两个feature
     y = y[y != 0]
 
     assert len(X) == len(y) == 100  # 共150个，去掉y=0的50个
@@ -46,6 +43,7 @@ def predict_3_by_feature_4():
     print(y_test)
 
     print(model_svc.score(X_test, y_test))
+
 
 print('少feature，预测2类，分数低。')
 predict_2_by_feature_2()

@@ -14,5 +14,3 @@ svc = svm.SVC(C=1, kernel='linear')
 # 手工隔离出100个，作为test数据，用于最后验证，计算分数。
 score = svc.fit(X[:-100], y[:-100]).score(X[-100:], y[-100:])
 print(score)
-
-

@@ -5,6 +5,7 @@ Plot different SVM classifiers in the iris dataset
 4种 model 的，针对 iris 的精简数据( 4个feature -> 2个feature )
 画出的分界线 decision boundaries (注意！！！！！！不是 有margin 的那个 decision function)
 
+区别：
 #### LinearSVC
 - 最小化       squared hinge loss
 - 多类别分类    one-vs-all

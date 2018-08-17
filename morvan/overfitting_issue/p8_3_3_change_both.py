@@ -8,14 +8,15 @@
 - 输入数据 ndarray
 - 输出数据 dataframe
 
+结论：就例子中的range来说， k=10 or 11， cv = 最好
 """
 # from __future__ import print_function
 
-from mpl_toolkits.mplot3d import Axes3D
-import matplotlib.pyplot as plt
-
-import pandas as pd
 import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
 from sklearn.datasets import load_iris
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score

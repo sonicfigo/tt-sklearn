@@ -13,7 +13,7 @@ X_train, X_test, y_train, y_test = train_test_split(diabetes.data, diabetes.targ
                                                     test_size=0.045)
 
 alphas = np.logspace(-4, -1, 6)
-regr = linear_model.Lasso()  # Lasso(least absolute shrinkage and selection operator)
+regr = linear_model.LassoCV()  # Lasso(least absolute shrinkage and selection operator)
 print (regr)
 score_list = []
 for alpha in alphas:

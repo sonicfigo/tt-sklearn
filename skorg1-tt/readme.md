@@ -33,4 +33,24 @@ http://scikit-learn.org/stable/tutorial/index.html
 
 ### chapter3
 > Model selection: choosing estimators and their parameters
+- 模型的参数自动选择，手工调整，手工验证等
 
+### chapter4
+> Unsupervised learning: seeking representations of the data
+- Clustering: grouping observations together
+    - 目标：已知要分为N类，进行observations的聚类
+    - VQ：vector quantization， 数据压缩，，使用类似KNN(k=n)的方式，把零散的数据，归到n类中
+    - hierarchical clustering：
+        1. agglomerative
+            - 最终会生成一个 connectivity graph
+            - feature agglomerative，用特征聚类，解决数据少，feature多的窘境
+        2. divisive
+    
+- Decompositions: from a signal to components and loadings
+    -TODO  选择并提取feature中最关键的成分，略过，PCA,ICA，挺关键，但未细读，先略过
+
+### chapter5
+> Putting it all together
+- Pipelining
+- Face recognition with eigenfaces
+- Open problem: Stock Market Structure

@@ -72,12 +72,12 @@ def plot_SMV_PCA(fig_num):
 # by_KNN()
 # by_LR()
 by_SVM()
-
 plt.show()
-# TODO 2018-08-14 17:40:17
 
 """
 plot 一下 digits 的 svm 的 图，看linear 这么准确，分出来的10类到底会是怎么样？
 马上遇到一个坎，x轴和y轴，只能取2维数据，那digit是64维的，如何plot出来可视化。
 涉及到高维数据的降维等知识点
+
+plot_SMV_PCA 完不成了
 """

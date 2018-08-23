@@ -51,7 +51,7 @@ def accuracy4classification():
     print('kcv_score_nda')
     print(kcv_score_nda)
 
-    # FIXME 注意这句, 错误的，shape后的score并不能正确对应原 x，y的组合
+    raise Exception('注意这句, 错误的，问题就是在这句 shape后的score并不能正确对应原 x，y的组合')
     nd_kcv_scores55 = kcv_score_nda.reshape(k_range.shape)
 
     print('\n===================scores')

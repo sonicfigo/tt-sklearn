@@ -35,7 +35,7 @@ print(y_predict)  # 预测
 print(iris_y_test)  # 真实答案
 
 
-# TODO 未细读 "维度灾难"
+# TODO 未真正理解 "维度灾难"
 """
 The curse of dimensionality
 For an estimator to be effective, you need the distance between neighboring points to be less than some value d, which depends on the problem. 

@@ -1,6 +1,6 @@
 # coding=utf-8
 """
-
+略过，pca有看过概念，ica不看了先略过
 """
 
 # Generate sample data

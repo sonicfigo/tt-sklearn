@@ -27,7 +27,7 @@ np.random.seed(4)
 
 
 # stats.norm(scale=0.25 / e)
-# <class 'scipy.stats._distn_infrastructure.rv_frozen'>
+# 为 <class 'scipy.stats._distn_infrastructure.rv_frozen'>
 def pdf(x):
     return 0.5 * (stats.norm(scale=0.25 / e).pdf(x)
                   + stats.norm(scale=4 / e).pdf(x))

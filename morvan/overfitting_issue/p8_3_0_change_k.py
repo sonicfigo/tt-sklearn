@@ -37,7 +37,9 @@ def accuracy4classification():
         # print('\n===================scores_mean:%s' % scores_mean)
         plt.text(k, scores_mean, k, ha='center', va='bottom')  # 把 k 值标注上
 
-    plt.plot(k_range, k_scores)
+    # plt.plot(k_range, k_scores)
+    print(k_range)
+    plt.plot(k_range)
     plt.xlabel('Value of K for KNN')
     plt.ylabel('Cross-Validated Accuracy')
     plt.show()

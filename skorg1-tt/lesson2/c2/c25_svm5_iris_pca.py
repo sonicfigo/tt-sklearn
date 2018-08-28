@@ -43,7 +43,10 @@ def plot_3d_pca():
     fig = plt.figure(2, figsize=(8, 6))
     ax3d = Axes3D(fig, elev=-150, azim=110)
 
-    X_reduced = PCA(n_components=3).fit_transform(iris.data)
+    pca_n3 = PCA(n_components=3)
+    X_reduced = pca_n3.fit_transform(iris.data)
+    # 原来可理解的feature 4个， 变成不可描述的feature 3个
+    print("plot_3d_pca: %s" % pca_n3.n_components_)
     # 把 3 个feature 对应的3d点，画到ax3d
     ax3d.scatter(X_reduced[:, 0], X_reduced[:, 1], X_reduced[:, 2], c=y,
                  cmap=plt.cm.Set1, edgecolor='k', s=40)
@@ -65,8 +68,10 @@ def plot_2d_pca():
     plt.figure(3, figsize=(8, 6))
     plt.clf()
 
+    pca_n2 = PCA(n_components=2)
     # shape(150, 4) -> shape(150, 1)
-    X_reduced = PCA(n_components=2).fit_transform(iris.data)  # 注意是PCA的fit_transform
+    X_reduced = pca_n2.fit_transform(iris.data)  # 注意是PCA的fit_transform
+    print("plot_2d_pca: %s" % pca_n2.n_components_)  # 2
     # 把 3 个feature 对应的3d点，画到ax3d
     plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=y, cmap=plt.cm.Set1, edgecolor='k',
                 s=40)

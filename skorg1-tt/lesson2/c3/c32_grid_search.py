@@ -25,14 +25,14 @@ svc = svm.SVC(kernel='linear')
 Cs = np.logspace(-6, -1, 10)
 
 # By default, the GridSearchCV uses a 3-fold cross-validation.
-svc_gridsearch = GridSearchCV(estimator=svc, param_grid=dict(C=Cs), n_jobs=-1)
+gscv_svc = GridSearchCV(estimator=svc, param_grid=dict(C=Cs), n_jobs=-1)
 
 print("""
 以下3个是 train 部分的数据
 """)
-svc_gridsearch.fit(X[:1000], y[:1000])
-print(svc_gridsearch.best_score_)  # 0.925...
-print(svc_gridsearch.best_estimator_.C)  # 0.0077...
+gscv_svc.fit(X[:1000], y[:1000])
+print(gscv_svc.best_score_)  # 0.925...
+print(gscv_svc.best_estimator_.C)  # 0.0077...
 
 print("""
 以下是当做正常 estimator 来用，执行 score
@@ -51,8 +51,8 @@ are optimized by cross-validated grid-search over a parameter grid.
 /Users/figo/pcharm/ml/tt-sklearn/morvan/overfitting_issue/l10.py
 """)
 # Prediction performance on test set is not as good as on train set
-print(svc_gridsearch.score(X[1000:], y[1000:]))  # 0.943...
-print(svc_gridsearch)
+print(gscv_svc.score(X[1000:], y[1000:]))  # 0.943...
+print(gscv_svc)
 
 print('\n===================所有结果')
-print(svc_gridsearch.cv_results_)
+print(gscv_svc.cv_results_)

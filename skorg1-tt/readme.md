@@ -3,11 +3,11 @@
 http://scikit-learn.org/stable/tutorial/index.html
 
 ## lesson1
-> An introduction to machine learning with scikit-learn
+> An introduction to machine learning with scikit-learn，基本操作知识，如 load,fit,predict
 - http://scikit-learn.org/stable/tutorial/basic/tutorial.html
 
 ## lesson2，有6个主要chapter
-> A tutorial on statistical-learning for scientific data processing
+> A tutorial on statistical-learning for scientific data processing，数据处理
 - http://scikit-learn.org/stable/tutorial/statistical_inference/index.html
 
 
@@ -47,10 +47,11 @@ http://scikit-learn.org/stable/tutorial/index.html
         2. divisive
     
 - Decompositions: from a signal to components and loadings
-    -TODO  选择并提取feature中最关键的成分，略过，PCA,ICA，挺关键，但未细读，先略过
+    -TODO  选择并提取feature中最关键的成分，略过，PCA 大致了解了，ICA还未细读
 
 ### chapter5
 > Putting it all together
 - Pipelining
 - Face recognition with eigenfaces
-- Open problem: Stock Market Structure
+
+- Open problem: Stock Market Structure，略过，不看

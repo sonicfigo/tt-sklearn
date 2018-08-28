@@ -21,11 +21,11 @@ alphas = np.logspace(-4, -0.5, 30)  # alphas 变动的范围，10的4次方 ~ 10
 tuned_parameters = [{'alpha': alphas}]
 n_folds = 3
 
-clf = GridSearchCV(lasso, tuned_parameters, cv=n_folds, refit=False)
-clf.fit(X, y)
+gscv_lasso = GridSearchCV(lasso, tuned_parameters, cv=n_folds, refit=False)
+gscv_lasso.fit(X, y)
 
-scores = clf.cv_results_['mean_test_score']  # 平均分数
-scores_std = clf.cv_results_['std_test_score']  # 标准差
+scores = gscv_lasso.cv_results_['mean_test_score']  # 平均分数
+scores_std = gscv_lasso.cv_results_['std_test_score']  # 标准差
 
 
 def plt_sth():

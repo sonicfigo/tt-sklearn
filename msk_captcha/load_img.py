@@ -6,7 +6,7 @@ from io import BytesIO
 
 from msk_captcha.img_helper import make_dataset
 
-imgpath = '/Users/figo/pcharm/ml/try_sklearn/msk_captcha/ZhGuT.png'
+imgpath = '/Users/figo/pcharm/ml/tt-sklearn/msk_captcha/ZhGuT.png'
 
 # wlh原始调用方法，图片的base64字符串
 # def read_img_base64():

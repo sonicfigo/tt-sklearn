@@ -72,9 +72,10 @@ yee_station/yee_var/msk_captcha/
 #pycharm_ide
 .idea/
 
-skorg1-tt/lesson3-working-with-text-data/html
-skorg1-tt/lesson3-working-with-text-data/paragraphs
-skorg1-tt/lesson3-working-with-text-data/short_paragraphs
+sk1-tt/lesson3-working-with-text-data/html
+sk1-tt/lesson3-working-with-text-data/paragraphs
+sk1-tt/lesson3-working-with-text-data/short_paragraphs
+
 #log
 yee.log*
 sys*.log.*

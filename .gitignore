@@ -73,8 +73,10 @@ yee_station/yee_var/msk_captcha/
 .idea/
 
 sk1-tt/lesson3-working-with-text-data/html
-sk1-tt/lesson3-working-with-text-data/paragraphs
 sk1-tt/lesson3-working-with-text-data/short_paragraphs
+
+sk1-tt/lesson3-working-with-text-data/text-exercise/datas/paragraphs
+sk1-tt/lesson3-working-with-text-data/text-exercise/datas/txt_sentoken
 
 #log
 yee.log*

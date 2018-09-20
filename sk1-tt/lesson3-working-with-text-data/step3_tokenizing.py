@@ -1,6 +1,8 @@
 # coding=utf-8
 """
 step3. CountVectorizer 用来做token分词后，得到某个单词的全局出现次数
+
+既，把单词在每个doc出现的次数，转成一个 vector
 """
 from sklearn.feature_extraction.text import CountVectorizer
 

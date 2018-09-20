@@ -3,17 +3,21 @@
 练习一：各国语言的文本
 1. 训练
 2. 识别出语言
+
+使用模型：
+    CountVectorizer + TfidfTransformer + SGDClassifier
+并用
+    GridSearchCV 搜索最佳参数
 """
 
+from datasets import split_paragraphs_data
 from sklearn import metrics
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.linear_model import SGDClassifier
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import Pipeline
 
-from datasets import load_train_and_test_paragraphs
-
-docs_train, docs_test, y_train, y_test, target_names = load_train_and_test_paragraphs()
+docs_train, docs_test, y_train, y_test, target_names = split_paragraphs_data()
 
 
 def _build_pipeline():
@@ -21,7 +25,7 @@ def _build_pipeline():
                      ('tfidf', TfidfTransformer()),
                      ('clf', SGDClassifier(loss='hinge', penalty='l2',
                                            alpha=1e-3, random_state=42,
-                                           max_iter=5, tol=None)),
+                                           max_iter=5, tol=None)),  # TODO 参数何意？
                      ])
 
 
@@ -33,7 +37,7 @@ def build_gscv():
                   'tfidf__use_idf': (True, False),
                   'clf__alpha': (1e-2, 1e-3),
                   }
-    return GridSearchCV(pipe_SGD, parameters, n_jobs=-1)
+    return GridSearchCV(pipe_SGD, parameters, n_jobs=-1)  # TODO 参数何意？
 
 
 def predict_and_verify_performance():

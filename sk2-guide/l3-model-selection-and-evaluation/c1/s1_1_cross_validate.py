@@ -21,7 +21,7 @@ cross_val_score()
 from pprint import pprint
 
 from sklearn import svm, datasets
-from sklearn.model_selection import cross_val_score, cross_validate
+from sklearn.model_selection import cross_validate
 
 iris = datasets.load_iris()
 scorings = ['precision_macro', 'recall_macro']
@@ -51,3 +51,6 @@ scoring_dict = {'prec_macro': 'precision_macro',
                 'rec_micro': make_scorer(recall_score, average='macro')}
 scores = cross_validate(clf, iris.data, iris.target, scoring=scoring_dict,
                         cv=5, return_train_score=True)
+
+print('\n===================cross_validate 结果')
+pprint(scores)

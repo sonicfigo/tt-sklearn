@@ -2,6 +2,8 @@
 """
 3.1.1. Computing cross-validated metrics
 
+cross_val_score
+等于就是做了多次的 train_test_split，并得出综合分数
 """
 from sklearn import svm, datasets
 from sklearn.model_selection import cross_val_score, ShuffleSplit
